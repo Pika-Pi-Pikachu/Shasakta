@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter' , sans-serif;
+    text-decoration: none;
+}
+:root{
+
+    --text-color: #333333;
+    --primary-color: #335c67;
+    --primary: #001d3d;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.signup-body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccd5ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-form{
+
+     width: 70%;
+    justify-content: space-between;
+    background-color: var(--light-gray);
+    /* gap: 5rem; */
+    border-radius: 1.5rem;
+    overflow: hidden;
+    
+}
+
+.form-container{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-item >input{
+   padding: 0.4rem;
+   font-size: 1.2rem;
+   border-radius:0.2rem;
+   
+}
+
+.form-item {
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#signup-form .signup-image{
+   
+    width: 50%;
+    
+    
+}
+
+#signup-form .signup-image img{
+     
+    width: 100%;
+    height: 68vh;
+    
+
+}
+
+
+.wrapper{
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+#feature .feature-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0 ,0 ,0 ,0.03);
+    border: 1px solid #cce7d0;
+}
+
+#feature .feature-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .feature-box h6 {
+    padding: 9px 8px 6px 8px;
+    border-radius: 4px;
+    color: var(--primary);
+    background-color: #fddde4;
+}
+
+#feature .feature-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .feature-box:nth-child(2) h6{
+
+    background-color: #cdebbc;
+}
+#feature .feature-box:nth-child(3) h6{
+
+    background-color: #d1e8f2;
+}
+#feature .feature-box:nth-child(4) h6{
+
+    background-color: #cdd4f8;
+}
+#feature .feature-box:nth-child(5) h6{
+
+    background-color: #f6dbf6;
+}
+#feature .feature-box:nth-child(6) h6{
+
+    background-color: #fff2e5;
+}
+
+
+form div.incorrect label{
+    background-color: #f06272;
+  }
+  form div.incorrect input{
+    border-color: #f06272;
+  }
+  #error-message{
+    color:#f06272;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-bar{
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 10rem;
+    
+}
+
+.nav-item > a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.nav-item{
+    gap: 3.5rem;
+}
+
+.button{
+    background-color: var(--primary);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.logo-image{
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.logo{
+    width: 0rem;
+    height: 0rem;
+}
+
+.main-section{
+    height: 45rem;
+    width: 100%;
+    background-image:url(./vecteezy_vector-banner-beautiful-portraits-of-women-of-different_.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 45rem;
+    border-radius: 0.5rem;
+    
+}
+
+.main-text{
+    padding: 2rem;
+    margin-top: 9rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50rem;
+}
+
+.main-start{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-class{
+    align-content: center;
+}
+
+.main-heading{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.para{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    width: 75%;
+}
+
+#feature-prod{
+    text-align: center;
+}
+
+#feature-prod h2{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#feature-prod .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+}
+
+#feature-prod .pro .pro-img img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+}
+
+#feature-prod .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#feature-prod .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#feature-prod .pro .des span{
+    color: #606063;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#feature-prod .pro .des h5{
+    padding-top: 7px;
+    color: var(--primary);
+    font-size: 19px;
+}
+
+#feature-prod .pro .des h4{
+    padding-top: 7px;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#feature-prod .pro .cart{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+.pro-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    background-image: url(./vecteezy_banner-place-for-text-strong-women-feminism-concept_.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    
+}
+
+#testimonial{
+    margin-top: 60px;
+}
+
+#testimonial h1{
+    text-align: center;
+}
+
+#testimonial .test-card img{
+    width: 70px;
+}
+
+#testimonial .test-card{
+    padding: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 28%;
+    min-width: 300px;
+    /* text-align: center; */
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+
+}
+
+#testimonial .test-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+#news-letter .news-cont .news-img{
+    width: 45%;
+    min-width: 500px;
+}
+
+#news-letter .news-cont .news-img img{
+    width: 100%;
+    height: 500px;
+}
+
+#news-letter .news-cont{
+    display: flex;
+}
+
+#news-letter .news-right{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ccd5ae;
+}
+
+#news-letter{
+    border: 1px solid #cce7d0;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    
+}
+
+#news-letter .news-right .form-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#news-letter .news-right .form-cont input{
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#news-letter .news-right .news-des h2{
+       
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+#shop-header .shop-class{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#shop-header .shop-class img{
+    width: 38%;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+#shop-header .shop-class .shop-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 50%;
+}
+
+#shop-header .shop-class .shop-des .shop-heading{
+    text-align: center;
+    color: var(--primary-color);
+    height: 8rem;
+    background-image: url(./button.png);
+    background-repeat: no-repeat;
+    background-size: 38rem;
+    
+}
+
+#shop-header .shop-class .shop-des .shop-para{
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+#shop-header .shop-class .shop-des .shop-subhead{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+#pagination a{
+    text-align: center;
+    width: 1.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+#prod-detail .single-pro-img{
+    width: 40%;
+    margin-right: 80px;
+    
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    width: 100%;
+    cursor: pointer;
+    flex-basis: 24%;
+    border: 1px solid var(--dark-gray);
+}
+
+.small-img-col img{
+    width: 100%;
+    height: 10rem;
+}
+
+#prod-detail{
+      display: flex;
+      margin-top: 20px;
+
+}
+
+#prod-detail .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+
+}
+
+#prod-detail .single-pro-details h4{
+    font-size: 36px;
+    padding: 40px 0 20px 0;
+}
+
+#prod-detail .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prod-detail .single-pro-details select{
+    display: block;
+      margin-bottom: 20px;
+      padding: 10px;
+}
+
+#prod-detail .single-pro-details input{
+    width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prod-detail .single-pro-details span{
+    line-height: 25px;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 60px;
+}
+
+#cart table td:nth-child(1){
+      width: 100px;
+      text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none ;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}

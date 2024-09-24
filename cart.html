@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="cart" class="section-p1">
+      
+        <table id="cart-table" width="100%">
+
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+
+            <tbody>
+               
+            </tbody>
+        </table>
+
+
+
+
+
+
+    </section>
+
+    <script>
+
+window.onload = function addItem() {
+      let cart_cont = JSON.parse(localStorage.getItem('cart_cont')) || [];
+
+      const cartContainer = document.querySelector('#cart-table tbody');
+
+      // Check if the cart is empty
+      if (cart_cont.length === 0) {
+        cartContainer.innerHTML = '<p style="font-size:3rem;">The cart is empty.</p>';
+      } else {
+        // Create the cart item list
+        cart_cont.forEach(item => {
+          const cartItem = document.createElement('tr');
+          cartItem.setAttribute("class" , "table-row");
+          cartItem.innerHTML = `<td class="delete-item"> <img src="./delete_24dp_5F6368_FILL1_wght400_GRAD0_opsz24.png" alt="" style="width: 2rem;"></td>
+          <td class="image"><img src="${item.image}" alt=""></td>
+          <td>${item.des}</td>
+          <td>${item.price}</td>
+`;
+
+          cartContainer.appendChild(cartItem);
+
+        });
+      }
+    }
+
+    const table_img = document.getElementsByClassName("delete-item");
+
+    for(let i=0;i<table_img.length;i++){
+
+      table_img[i].addEventListener("click" , (e)=>{
+            
+        const img_src = table_img[i].getElementsByTagName("img")[0].src;
+
+        cart_cont.splice(i,1);
+
+        addItem();
+
+
+
+      })
+    }
+
+    // Function to refresh the cart display
+    function refreshCart() {
+      const cartContainer = document.querySelector('#cart-table tbody');
+      cartContainer.innerHTML = ''; // Clear the current cart display
+
+      let cart_cont = JSON.parse(localStorage.getItem('cart_cont')) || [];
+
+      if (cart_cont.length === 0) {
+        cartContainer.innerHTML = '<p style="font-size:3rem;">The cart is empty.</p>';
+      } else {
+        cart_cont.forEach((item, index) => {
+          const cartItem = document.createElement('tr');
+          cartItem.setAttribute("class" , "table-row");
+          cartItem.innerHTML = `<td class="delete-item"> <img src="./delete_24dp_5F6368_FILL1_wght400_GRAD0_opsz24.png" alt="" style="width: 2rem;"></td>
+          <td class="image"><img src="${item.image}" alt=""></td>
+          <td>${item.des}</td>
+          <td>${item.price}</td>`;
+
+          cartContainer.appendChild(cartItem);
+
+          // Add event listener to delete the item when clicked
+         
+          });
+  
+      }
+    }
+
+
+
+    </script>
+
+</body>
+</html>
+

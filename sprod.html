@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar flex">
+    
+            <div class="logo-image flex">
+                🌸 Kaarigar
+            </div>
+            <div class="nav-item flex">
+    
+                    <a href="home.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="">About</a>
+                    <a href="">Blogs</a>
+                
+            </div>
+            <div class="button">Contact Us</div>
+    
+        </div>
+    </div>
+
+    <section id="prod-detail" class="section-p1 container">
+
+        <div class="single-pro-img">
+
+            <img src="./Fabric moon dream catcher 🌙✨.jpeg" width="100%" id="main-img" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./Fabric moon dream catcher 🌙✨.jpeg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="./vecteezy_retro-style-premium-quality-badge-set_97791.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="./TRUSTED_SELLER_BADGES_generated.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="./vecteezy_fast-moving-shipping-delivery-truck-vector-icon-for_8013017-1.jpg" width="100%" class="small-img">
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="single-pro-details">
+
+          <h3 style="color: #555;;">Greh Laxmi</h3>
+            <h4 class="single-pro-head">Beautiful Wall Hanging</h4>
+            <h2> ₹ 200</h2>
+            <select>
+                <option> Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+
+            <input type="number" value="1">
+            <button class="button addToCartbtn">Add to Cart</button>
+            <h4 class="single-pro-subhead">Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore quos consequuntur aliquam nam rem id voluptatum quae omnis dolores aspernatur sapiente deserunt rerum saepe, natus cumque! Voluptates, praesentium est ullam quam aut ipsam nam minima, culpa omnis, maiores obcaecati odio tenetur officia ex nihil veniam nemo blanditiis unde inventore.</span>
+        </div>
+
+
+    </section>
+
+
+    <section id="feature-prod" class="section-p1">
+        <h2>Selected For You</h2>
+             
+    
+        <div class="pro-container container">
+    
+            <div class="pro">
+    
+            <div class="pro-img"> <img src="./download (6).jpeg" alt=""></div>
+    
+                <div class="des">
+                    <span>Cara</span>
+                    <h5>Beautiful Bracelet</h5>
+                    <div class="start">⭐⭐⭐⭐⭐</div>
+                    <h4>₹ 150</h4>
+                </div>
+               <div class="cart"> <a href=""><img src="./shopping_cart_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" alt="" width="28px"></a></div>
+            </div>
+    
+            <div class="pro">
+    
+                <div class="pro-img"> <img src="./download (2).jpeg" alt=""></div>
+        
+                    <div class="des">
+                        <span>Anoobhoti</span>
+                        <h5>Beautiful Crochet Hairband</h5>
+                        <div class="start">⭐⭐⭐⭐⭐</div>
+                        <h4>₹ 180</h4>
+                    </div>
+                   <div class="cart"> <a href=""><img src="./shopping_cart_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" alt="" width="28px"></a></div>
+                </div>
+    
+                <div class="pro">
+    
+                    <div class="pro-img"> <img src="./download (8).jpeg" alt=""></div>
+            
+                        <div class="des">
+                            <span>Greh Laxmi</span>
+                            <h5>Beautiful Wall Hanging</h5>
+                            <div class="start">⭐⭐⭐⭐⭐</div>
+                            <h4>₹ 200</h4>
+                        </div>
+                       <div class="cart"> <a href=""><img src="./shopping_cart_16dp_5F6368_FILL1_wght400_GRAD0_opsz20.png" alt="" width="28px"></a></div>
+                    </div>
+               
+            </div>
+        
+    </section>
+
+
+
+ <section id="news-letter" class="container">
+   
+        <div class="news-cont">
+            <div class="news-img">
+                <img src="./download (21).jpeg" alt="">
+            </div>
+            <div class="news-right">
+    
+                <div class="news-des">
+                   <h2> Get the latest updates</h2>
+                 <h4> Sign up for our newsletter</h4>
+                </div>
+                <form class="form-cont">
+                    <input type="text" name="text" id="text" placeholder="Enter Your Name">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="contact-number" name="contact-no." id="contact-no." placeholder="Enter Contact Number">
+                    <button class="button">Submit</button>
+                </form>
+    
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+const img = localStorage.getItem("image");
+const price = localStorage.getItem("price");
+const descript = localStorage.getItem("des");
+
+const main_image = document.getElementById('main-img');
+const small_image = document.querySelectorAll('.small-img');
+const single_details = document.getElementsByClassName('single-pro-details')[0];
+
+
+          
+          main_image.src=img;
+
+          single_details.getElementsByClassName('single-pro-head')[0].textContent = descript;
+
+          single_details.getElementsByTagName('h2')[0].textContent=price;
+
+          small_image[0].src=img;
+
+    
+
+        small_image[0].onclick= function(){
+            main_image.src=small_image[0].src;
+        }
+
+        small_image[1].onclick= function(){
+            main_image.src=small_image[1].src;
+        }
+
+        small_image[2].onclick= function(){
+            main_image.src=small_image[2].src;
+        }
+
+        small_image[3].onclick= function(){
+            main_image.src=small_image[3].src;
+        }
+     
+        const addToCart = document.getElementsByClassName('button')[0];
+
+        addToCartbtn.addEventListener("click", ()=>{
+
+                
+            const obj = {
+            image: img,
+            des: descript,
+            price:price
+        }
+
+        const cart_cont = JSON.parse(localStorage.getItem("cart_cont")) || [];
+
+               cart_cont.push(obj);
+
+             localStorage.setItem("cart_cont" , JSON.stringify(cart_cont));
+             alert("Item added to cart!");
+
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
